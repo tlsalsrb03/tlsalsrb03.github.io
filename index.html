@@ -1,48 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset='utf-8'>
+<meta charset="utf-8">
 <style>
-table, tr, th, td {
-	border: solid 1px black;
+  * {padding: 0px; margin: 0px; background-color: black; color: white;}
+  header, nav, section, aside, footer {border: solid 0px red;}
+  header {width: 1395px; height: 100px; margin: 10px 0px 0px 10px; text-align: center;}
+  nav {width: 1395px; height: 100px;  margin: 10px 0px 0px 10px; text-align: center;}
+  section {width: 724px; height: 640px; margin-top: 10px;  margin: 10px 29px 0px 10px; float: left;}
+  aside {width: 640px; height: 590px; margin-top: 10px; float: left;}
+  footer {width: 1395px; height: 130px;  margin: 60px 0px 0px 10px;}
+  .clear {clear: both;}
+  h1 {border: solid 5px red; width: 350px; text-align: center; text-shadow: 1px 1px 20px white; margin-left: 510px; padding: 10px;}
+  h3 {padding-bottom: 10px;}
+
+  .aaa {padding: 10px 0px 0px 0px; text-decoration: underline red;}
+  .sss {padding: 40px 0px 0px 0px;}
+  .ooo {color: red;}
+  .qqq {padding: 20px 0px 0px 20px;}
+
+
+  table, tr, th, td {
+	border: solid 1px white;
 	border-collapse: collapse; text-align: center;
 	padding: 8px;}
-	.o {color: blue;}
-	.i {color: green;}
-	.p {color: red;}
-	.g {color: hotpink;}
-	.a {color: wheat;}
-	.z {color: indigo;}
-	.s {color: darkcyan;}
-	.w {color: darkgrey;}
-	.k {color: darkred;}
+  table {width: 674; height: 240px;}
+	.o {color: blue; background-color: black;}
+	.i {color: gray; background-color: black; }
+	.p {color: yellow; background-color: black;}
+	.g {color: yellow; background-color: black;}
+	.a {color: yellow; background-color: black;}
+	.z {color: yellow; background-color: black;}
+	.s {color: yellow; background-color: black;}
+	.w {color: yellow; background-color: black;}
+	.k {color: yellow; background-color: black;}
     table th{width: 130px; background-color: rgb(101, 107, 101); color: rgb(255, 255, 255);}
-	table td:hover {background-color: yellow;}
+	table td:hover {background-color: red;}
 </style>
 </head>
 <body>
-<h3>20210333 신민규 2022-1학기 시간표</h3>
-<table>
-<tr><th>시간표</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th></tr>
-<tr><th>10:30<br> ~ <br>11:30</th><td><span class="o">공강</span></td><td rowspan="2"><span class="a">마케팅의이해</span></td><td><span class="o">공강</span></td><td rowspan="2"><span class="w">경영통계</span></td><td rowspan="8"><span class="o">금공강</span></td></tr>
-<tr><th>11:30<br> ~ <br>12:30</th><td rowspan="2"><span class="g">현대통상의이해</span></td><td><span class="z">대학영어회화2</span></td></tr>
-<tr><th>12:30<br> ~ <br>13:30</th><td><span class="i">점심시간</span></td><td rowspan="2"><span class="i">점심시간</span></td><td rowspan="6"><span class="o">공강</span></td></tr>
-<tr><th>13:30<br> ~ <br>14:30</th><td><span class="i">점심시간</span></td><td rowspan="2"><span class="s">웹프로그래밍</span></td></tr>
-<tr><th>14:30<br> ~ <br>15:30</th><td rowspan="2"><span class="p">대학생을위한실용금융</span></td><td><span class="w">경영통계</span></td></tr>
-<tr><th>15:30<br> ~ <br>16:30</th><td rowspan="3"><span class="o">공강</span></td><td rowspan="2"><span class="k">인간과아름다움</span></td></tr>
-<tr><th>16:30<br> ~ <br>17:30</th><td rowspan="2"><span class="o">공강</span></td></tr>
-<tr><th>17:30<br> ~ <br>18:30</th><td><span class="o">공강</span></td></tr>
-</table>
-<br>
-<tr>
- <h3><a href="jo.html" >[회원가입 페이지]</a></h3>
- <h3><a href="루바토 펜션.html" >[루바토 펜션 안내 페이지]</a></h3>
- <h3><a href="국제 기타 페스티벌.html" >[국제 기타 페스티벌 페이지]</a></h3>
- <h3><a href="주말 야간 개장 안내.html" >[주말 야간 개장 안내 페이지]</a></h3>
- <h3><a href="행사안내.html" >[세일 안내장 페이지]</a></h3>
- <h3><a href="월간 일정표.html" >[월간 일정표 페이지]</a></h3>
- <h3><a href="쇼핑몰 판매 목록 페이지.html" >[쇼핑몰 판매 목록 페이지]</a></h3>
+<header>
+<h1>신민규의 웹사이트</h1><br><a href="프로필.html"> <span class="aaa">20210333 신민규 - 2022 1학기 웹프로그래밍</span></a>
+</header>
 
-</tr>
+<nav>
+  <div class="sss">
+  <a href="jo.html" >[회원가입 페이지]</a> <span class="ooo">|</span>
+  <a href="루바토 펜션.html" >[루바토 펜션 안내 페이지]</a> <span class="ooo">|</span>
+  <a href="국제 기타 페스티벌.html" >[국제 기타 페스티벌 페이지]</a> <span class="ooo">|</span>
+  <a href="주말 야간 개장 안내.html" >[주말 야간 개장 안내 페이지]</a> <span class="ooo">|</span>
+  <a href="행사안내.html" >[세일 안내장 페이지]</a> <span class="ooo">|</span>
+  <a href="월간 일정표.html" >[월간 일정표 페이지]</a> <span class="ooo">|</span>
+  <a href="쇼핑몰 판매 목록 페이지.html" >[쇼핑몰 판매 목록 페이지]</a> 
+  </div>
+</nav>
+
+<section>
+<table>
+  <tr><th>시간표</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th></tr>
+  <tr><th>10:30<br> ~ <br>11:30</th><td><span class="o">공강</span></td><td rowspan="2"><span class="a">마케팅의이해</span></td><td><span class="o">공강</span></td><td rowspan="2"><span class="w">경영통계</span></td><td rowspan="8"><span class="o">금공강</span></td></tr>
+  <tr><th>11:30<br> ~ <br>12:30</th><td rowspan="2"><span class="g">현대통상의이해</span></td><td><span class="z">대학영어회화2</span></td></tr>
+  <tr><th>12:30<br> ~ <br>13:30</th><td><span class="i">점심시간</span></td><td rowspan="2"><span class="i">점심시간</span></td><td rowspan="6"><span class="o">공강</span></td></tr>
+  <tr><th>13:30<br> ~ <br>14:30</th><td><span class="i">점심시간</span></td><td rowspan="2"><span class="s">웹프로그래밍</span></td></tr>
+  <tr><th>14:30<br> ~ <br>15:30</th><td rowspan="2"><span class="p">대학생을위한실용금융</span></td><td><span class="w">경영통계</span></td></tr>
+  <tr><th>15:30<br> ~ <br>16:30</th><td rowspan="3"><span class="o">공강</span></td><td rowspan="2"><span class="k">인간과아름다움</span></td></tr>
+  <tr><th>16:30<br> ~ <br>17:30</th><td rowspan="2"><span class="o">공강</span></td></tr>
+  <tr><th>17:30<br> ~ <br>18:30</th><td><span class="o">공강</span></td></tr>
+  </table>
+</section>
+
+<aside>
+  <h3>5월 달력 (KIA 타이거즈)</h3>
+  <a href="월간 일정표"><img src="달력.png" width="590px" height="550px"></a>
+</aside>
+<div class="clear"></div>
+<footer>
+<div class="qqq"> 소속 : 호서대학교 디지털기술경영<br> 이메일 : 1234@naver.com<br> 전화번호 : 010-1111-1111</div>
+</footer>
+
 </body>
 </html>
